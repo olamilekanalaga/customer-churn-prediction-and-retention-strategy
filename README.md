@@ -43,7 +43,11 @@ Key feature groups:
 9. Retention recommendations
 10. Streamlit dashboard deployment
 
-The exploratory notebook is available at `notebooks/01_eda_and_business_insights.ipynb`.
+Notebook sequence:
+
+- `notebooks/01_eda_and_business_insights.ipynb`: business EDA, hypotheses, leakage review, churn patterns, and retention insights.
+- `notebooks/02_feature_engineering.ipynb`: leakage-safe feature selection, cleaning decisions, train/test split, encoding, scaling, and preprocessing pipeline.
+- `notebooks/03_model_training_and_evaluation.ipynb`: model training, comparison, evaluation, feature importance, and final model saving.
 
 ## Models Compared
 
@@ -116,24 +120,29 @@ streamlit run app/streamlit_app.py
 
 ```text
 .
-├── app/
-│   └── streamlit_app.py
-├── data/
-│   ├── raw/
-│   └── processed/
-├── models/
-│   └── churn_model.joblib
-├── notebooks/
-│   └── 01_eda_and_business_insights.ipynb
-├── reports/
-│   ├── figures/
-│   ├── business_summary.json
-│   ├── feature_importance.csv
-│   └── model_metrics.json
-├── src/
-│   └── train_model.py
-├── requirements.txt
-└── README.md
+|-- app/
+|   `-- streamlit_app.py
+|-- assets/
+|   `-- dashboard_screenshot.png
+|-- data/
+|   |-- raw/
+|   `-- processed/
+|-- models/
+|   `-- churn_model.joblib
+|-- notebooks/
+|   |-- 01_eda_and_business_insights.ipynb
+|   |-- 02_feature_engineering.ipynb
+|   `-- 03_model_training_and_evaluation.ipynb
+|-- reports/
+|   |-- figures/
+|   |-- business_summary.json
+|   |-- case_study.md
+|   |-- feature_importance.csv
+|   `-- model_metrics.json
+|-- src/
+|   `-- train_model.py
+|-- requirements.txt
+`-- README.md
 ```
 
 ## Business Recommendations
