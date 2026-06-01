@@ -43,6 +43,8 @@ Key feature groups:
 9. Retention recommendations
 10. Streamlit dashboard deployment
 
+The exploratory notebook is available at `notebooks/01_eda_and_business_insights.ipynb`.
+
 ## Models Compared
 
 - Logistic Regression
@@ -121,6 +123,8 @@ streamlit run app/streamlit_app.py
 │   └── processed/
 ├── models/
 │   └── churn_model.joblib
+├── notebooks/
+│   └── 01_eda_and_business_insights.ipynb
 ├── reports/
 │   ├── figures/
 │   ├── business_summary.json
