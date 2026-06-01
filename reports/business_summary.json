@@ -1,0 +1,11 @@
+{
+  "customers": 7043,
+  "overall_churn_rate": 0.2654,
+  "observed_monthly_revenue_at_risk": 139130.85,
+  "best_model": "Random Forest",
+  "high_risk_segments": {
+    "month_to_month_churn_rate": 0.4271,
+    "electronic_check_churn_rate": 0.4529,
+    "fiber_optic_churn_rate": 0.4189
+  }
+}
